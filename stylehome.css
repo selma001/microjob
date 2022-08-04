@@ -1,0 +1,336 @@
+:root{
+    --primary: #1C4DA0;
+    --secondary: #A1EDFF;
+    --textcolor: #393939;
+    --background_white:#fff ;
+    --background_offwhite: #F3F3F3;
+    --font: 'Segoe UI';
+    --sidePadding: 5%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: var(--primary);
+}
+
+body{
+    font-family: var(--font);
+}
+
+.container{
+    background-color: var(--primary); 
+    padding-right: 5em;
+    
+}
+
+.main-nav img{
+    width: 12em ;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-nav .btn{
+  
+    padding: 5px 25px;
+    font-size: 20px;
+    font-family: var(--font);
+    color: var(--secondary);
+    background-color: transparent;
+    border-color: var(--secondary);
+    border-radius: 4px  ;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.main-nav .btn:hover{
+    color: var(--background_offwhite);
+}
+
+#home{
+    padding-top: 5em;
+    padding-left: 9em;
+    background-color: var(--primary);
+    background-image:url(/images/curly.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: right;
+    height: 90vh;
+}
+
+
+section h1{
+    color: var(--background_white);
+    font-size: 60px;
+    
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 650px;
+    display: inline-flex;
+    height: 3em;
+}
+
+.serach-input{
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    border: 3px solid var(--secondary);
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    transition: background 0.25s, box-shadow 0.25s;
+}
+
+.serach-input:focus{
+    background: var(--background_white);
+    box-shadow: 0 0 2px var(--secondary);
+}
+
+.serach-input::placeholder{
+    color: var(--background_offwhite);
+    opacity: .5;
+    font-size: 18px;
+}
+
+.search-btn{
+    width: 45px;
+    background: var(--secondary);
+    color: var(--textcolor);
+    border: none;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.djezzy{
+    width: 100%;
+    text-align: center;
+}
+
+.djezzy img{
+    padding-top: 14em;
+    width: 4em;
+}
+
+.djezzy h4{
+    color: var(--background_offwhite);
+    opacity: .6;
+}
+
+/*main page*/
+/*fields*/
+
+.explore{
+    background-color: var(--background_offwhite);
+    padding: var(--sidePadding);
+}
+
+.explore .texts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore .texts h2{
+    font-size:2em;
+}
+
+.explore .texts a{
+    padding-top: 1.3em;
+    color: var(--textcolor);
+}
+
+.fields1, .fields2{
+    display: flex;
+    padding-top: 2em;
+    justify-content: space-between;
+}
+
+.field1, .field2, .field3, .field4, .field5, .field6{
+    background-color: #1C4DA0;
+    width: 23.5em;
+    height: 10em;
+    border-radius: 6px;
+}
+
+.field1 p, .field2 p, .field3 p, .field4 p, .field5 p, .field6 p{
+    text-align: center;
+    padding-top: 2.4em;
+    font-size: 1.5em;
+    color: var(--background_white);
+}
+
+/*explain page*/
+.explain{
+    padding: var(--sidePadding);
+    background-color: var(--secondary);
+}
+
+.explain h1{
+    text-align: center;
+}
+
+.explain .rules{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.rule1 h3, .rule2 h3, .rule3 h3, .rule-text{
+    text-align: center;
+}
+
+.rule-text{
+    color: var(--textcolor);
+    opacity: .8;
+    padding-bottom: 1em;
+}
+
+.rule1 h3, .rule2 h3, .rule3 h3{
+    padding-bottom: 1em;
+    padding-top: .5em;
+   color: var(--textcolor);
+}
+
+.icon, .icon2, .icon3 {
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+    color: var(--primary);
+    background-color: transparent;
+    border: none;
+    padding-left: 2em;
+}
+
+.num{
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    background-color: var(--primary);
+    border-radius: 2px;
+    border: none;
+    color: var(--background_white);
+}
+
+/*recomendation page*/
+.inspiration{
+    background-color: var(--background_offwhite);
+    padding-right: var(--sidePadding);
+    padding-left: var(--sidePadding);
+    padding-bottom: var(--sidePadding);
+}
+
+.inspiration h1{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.col1, .col2, .col3{
+    display: flex;
+    justify-content: space-between;
+}
+.col2, .col3{
+    padding-top: 2em;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9{
+    background-color: var(--background_white);
+    width: 23.5em;
+    height: 23.5em;
+    border-radius: 7px;
+}
+
+.project1 .image, .project2 .image, .project3 .image, .project4 .image, .project5 .image, .project5 .image, .project6 .image,
+.project7 .image, .project8 .image, .project9 .image{
+    background-image: url(/images/paint.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 23.5em;
+    height: 15em;
+}
+
+.paiment1, .paiment2, .paiment3, .paiment4, .paiment5, .paiment6, .paiment7, .paiment8, .paiment9{
+    display: flex;
+    justify-content: space-between;
+}
+.paiment1 p, .paiment2 p, .paiment3 p, .paiment4 p, .paiment5 p, .paiment6 p, .paiment7 p, .paiment8 p, .paiment9 p{
+    padding-top: 6px;
+    padding-left: 4px;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.paiment1 .stars1, .paiment2 .stars2, .paiment3 .stars3, .paiment4 .stars4, .paiment5 .stars5, .paiment6 .stars6
+, .paiment7 .stars7, .paiment8 .stars8, .paiment9 .stars9{
+    color: yellow;
+    font-size: .8em;
+    padding-top: 6px;
+    padding-right: 4px;
+}
+
+.prix1 , .prix3, .prix4, .prix5, .prix6, .prix7{
+    padding-top: 2em;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.prix8{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.prix2, .prix4, .prix9{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.prix1 h4, .prix2 h4, .prix3 h4, .prix4 h4, .prix5 h4, .prix6 h4, .prix7 h4, .prix8 h4, .prix9 h4{
+    color: rgb(57, 167, 57);
+    font-size: .8em;
+}
+
+.prix3 i, .prix5 i{
+    color: red;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile p{
+    padding-top: 6px;
+    font-weight: bold;
+}
+.profil-pic{
+    margin: 4px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
