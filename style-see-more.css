@@ -1,0 +1,141 @@
+:root{
+    --primary: #1C4DA0;
+    --secondary: #A1EDFF;
+    --textcolor: #393939;
+    --background_white:#fff ;
+    --background_offwhite: #F3F3F3;
+    --font: 'Segoe UI';
+    --sidePadding: 5%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+/*nav bar*/
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2em;
+    padding-bottom: .1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--background_white);
+}
+
+.main-nav .logo{
+    width: 12em ;   
+    cursor: pointer;
+}
+
+.main-nav ul{
+    display: flex;
+    padding-top: 1.5em;
+}
+
+.main-nav ul li{
+    list-style: none;
+    padding-right: 1em;
+    color: var(--textcolor);
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.main-nav .btn{
+    padding: 2px 18px;
+    font-size: 20px;
+    font-family: var(--font);
+    color: var(--textcolor);
+    background-color: transparent;
+    border-color: var(--textcolor);
+    border-radius: 4px  ;
+    transition: 0.8s;
+    cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-nav .btn:hover{
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 300px;
+    display: inline-flex;
+    height: 2.5em;
+    
+}
+
+.serach-input{
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    border: 3px solid var(--secondary);
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    transition: background 0.25s, box-shadow 0.25s;
+    
+}
+
+.serach-input:focus{
+    background: var(--background_white);
+    box-shadow: 0 0 2px var(--secondary);
+}
+
+.serach-input::placeholder{
+    color: var(--textcolor);
+    opacity: .5;
+    font-size: 14px;
+}
+
+.search-btn{
+    width: 45px;
+    background: var(--secondary);
+    color: var(--textcolor);
+    border: none;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*main page*/
+main{
+    padding: 2em var(--sidePadding) var(--sidePadding) var(--sidePadding);
+    
+    background-color: var(--background_offwhite);
+}
+
+.fields1, .fields2, .fields3, .fields4{
+    display: flex;
+    padding-top: 2em;
+    justify-content: space-between;
+}
+
+.field1, .field2, .field3, .field4, .field5, .field6, .field7, .field8, .field9, .field10, .field11, .field12{
+    background-color: #1C4DA0;
+    width: 23.5em;
+    height: 10em;
+    border-radius: 6px;
+}
+
+.field1 p, .field2 p, .field3 p, .field4 p, .field5 p, .field6 p, .field7 p, .field8 p, .field9 p, .field10 p, .field11 p, .field12 p{
+    text-align: center;
+    padding-top: 2.4em;
+    font-size: 1.5em;
+    color: var(--background_white);
+} 
